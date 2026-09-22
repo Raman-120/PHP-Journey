@@ -14,7 +14,7 @@
 <body>
 
     <form action  = "UpdateProcess.php" method="POST">
-        <input type="text" name = "pass" value = "<?php echo $id;?>"><br>
+        <input type="hidden" name = "id" value = "<?php echo $id;?>"><br>
 
         <label>Username</label>
         <input type="text" name = "user" value = "<?php echo $username;?>" ><br>
