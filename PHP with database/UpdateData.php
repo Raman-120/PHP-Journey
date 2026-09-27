@@ -4,6 +4,7 @@
         <th>Username</th>
         <th>Password</th>
         <th>Update</th>
+        <th>Delete</th>
     </tr>
 
 
@@ -25,6 +26,7 @@
                 <td><?php echo $data["password"]; ?></td>
                 <td><a href = "UpdateForm.php?id=<?php echo $data["ID"];?>&user=<?php echo $data["username"]; ?>&pass=<?php 
                 echo $data["password"]; ?>">Update</a></td>
+                <td><a href="DeleteData.php?id=<?php echo $data["ID"];?>">delete</a></td>
             </tr>
    
     <?php }

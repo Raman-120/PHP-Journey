@@ -8,12 +8,17 @@
     if($rowcount > 0){
         // print_r(mysqli_fetch_array($check));
         // print_r(mysqli_fetch_assoc($check));
+        while($data = mysqli_fetch_assoc($check)){
+            echo $data["ID"] . "<br>";
+            echo $data["username"]."<br>";
+            echo $data["password"]."<br>";
+        }
+
+    }
+    else{
+        echo "no data found";
     }
 
-    while($data = mysqli_fetch_assoc($check)){
-        echo $data["ID"] . "<br>";
-        echo $data["username"]."<br>";
-        echo $data["password"]."<br>";
-    }
+    
 ?>
 
