@@ -21,7 +21,8 @@
         while($data = mysqli_fetch_assoc($check)){
             ?>
             <tr>
-                <td><?php echo $data["ID"] ?>;</td>
+                <td><?php echo $data["ID"]; ?>
+            </td>
                 <td><?php echo $data["username"]; ?></td>
                 <td><?php echo $data["password"]; ?></td>
                 <td><a href = "UpdateForm.php?id=<?php echo $data["ID"];?>&user=<?php echo $data["username"]; ?>&pass=<?php 
@@ -32,7 +33,7 @@
     <?php }
     }
     else{
-        echo"No date found";
+        echo"No data found";
     }
 
     
