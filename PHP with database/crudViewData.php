@@ -1,4 +1,4 @@
-<table class = "table"  style="border-spacing: 30px;">
+<table class = "table"  style="border-spacing: 40px;">
     <tr class="bg -danger text-white table bordered">
         <th>Name</th>
         <th>Email</th>
