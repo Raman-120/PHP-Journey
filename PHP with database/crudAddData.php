@@ -1,6 +1,6 @@
 <?php
 
-    $con = mysqli_connect("localhost","root","","php database");
+   include "connection.php";
 
     $name = $_POST['name'];
     $email = $_POST['email'];

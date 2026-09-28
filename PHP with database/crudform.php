@@ -86,6 +86,10 @@
         <!-- Submit -->
         <input type="submit" value="Submit">
 
+
+
+        <a href = "crudViewData.php" class = "btn btn-success mb-5">View Data</a>
+
     </form>
 
 </body>
