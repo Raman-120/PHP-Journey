@@ -1,5 +1,5 @@
 <?php
-    error_reporting(0);
+    error_reporting(0); // shows 0 warnings 
     $id = $_REQUEST['id'];
     $name = $_REQUEST['name'];
     $email = $_REQUEST['email'];
@@ -21,7 +21,10 @@
 
     <h2>Registration Form</h2>
 
-    <form action="crudAddData.php" method="POST">
+     <form action = "crudAddData.php" method="POST">
+    
+   
+   
 
         <!-- Name -->
         <label for="name">Name:</label>
@@ -93,7 +96,18 @@
         <br><br>
 
         <!-- Submit -->
-        <input type="submit" value="Submit">
+         <?php 
+            if(!empty($id)){
+            ?>    
+            <input type="hidden" name = "id" value="<?php echo $id; ?>">
+            <button type = "submit" class = "btn btn-primary" name = "update">Update</button>
+            <?php }
+            else{
+              ?>  <button type="submit" class = "btn btn-success" value="Submit" name = "submit">Submit</button>
+            <?php }?>
+         
+         
+        
 
 
 
