@@ -1,4 +1,4 @@
-<table class = "table"  style="border-spacing: 40px;">
+<table class = "table"  style="border-spacing: 20px;">
     <tr class="bg -danger text-white table bordered">
         <th>Name</th>
         <th>Email</th>
@@ -27,7 +27,9 @@
             <td><?php echo $result['gender'];?></td>
             <td><?php echo $result['language'];?></td>
             <td><?php echo $result['address'];?></td>
-            <td><a href = "#" class=""btn btn-success">update</a></td>
+            <td><a href = "crudform.php?id=<?php echo $result['ID'];?>&name=<?php echo $result['name']; ?>&email=<?php echo $result['email']; ?>
+            &password=<?php echo $result['password']; ?>&qualification=<?php echo $result['qualification']; ?>&gender=<?php echo $result['gender']; ?>
+            &language=<?php echo $result['language']; ?>&address=<?php echo $result['address']; ?>"  class=""btn btn-success">update</a></td>
             <td><a href = "#" class="btn btn-danger">delete</a></td>
           </tr>
 
