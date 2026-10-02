@@ -97,8 +97,8 @@
 
         <form action="loginProcess.php" method="POST">
             <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name = "email" placeholder="Enter your email" required>
+                <label for="username">Username</label>
+                <input type="username" id="username" name = "username" placeholder="Enter your username" required>
             </div>
 
             <div class="input-group">
